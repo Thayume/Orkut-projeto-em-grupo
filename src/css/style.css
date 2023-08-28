@@ -1,0 +1,346 @@
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+body {
+  min-height: 100vh;
+  max-width: 1950px;
+  margin: 0 auto;
+  font-family: Roboto;
+}
+
+.container {
+  width: 100%;
+}
+
+.header {
+  background-color: var(--light);
+}
+
+.header .container {
+  height: 9.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.8rem;
+}
+
+.header .container .nav ul {
+  display: flex;
+  gap: 4rem;
+}
+
+.header .container .nav ul li a:hover {
+  color: var(--hover);
+}
+
+.header .container .pesquisar {
+  position: relative;
+}
+
+.header .container .pesquisar input {
+  background-color: var(--bg);
+  width: 35.5rem;
+  height: 4.39rem;
+  border-radius: 1rem;
+}
+
+.header .container .pesquisar input::placeholder {
+  display: flex;
+  align-items: center;
+  padding-left: 3.5rem;
+  color: var(--fs1);
+}
+
+.header .container .pesquisar input[type="text"]:focus {
+  color: var(--hover);
+  padding-left: 3rem;
+}
+
+.header .container .pesquisar input:focus-visible {
+  outline: 1px solid var(--hover);
+}
+
+.header .container .pesquisar i {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  padding: 0.9rem 0.8rem;
+  color: var(--fs01);
+  cursor: pointer;
+}
+
+.header .container .profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.header .container .profile-header img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+
+.header .container .profile-header i {
+  color: var(--hover);
+}
+
+.main {
+  background-color: var(--bg);
+  display: flex;
+  gap: 3.2rem;
+  padding: 8rem 0 5.4rem 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.profile .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.profile .container .card-profile {
+  width: 28rem;
+  height: 32.4rem;
+  background-color: var(--light);
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile .container .card-profile .img-profile {
+  border-radius: 10rem;
+  width: 18.4rem;
+  height: 18.4rem;
+  border: 0.3rem solid var(--hover);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile .container .card-profile .img-profile img {
+  border-radius: 10rem;
+  width: 17rem;
+  height: 17em;
+}
+
+.profile .container .card-profile h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--fs2);
+}
+
+.profile .container .card-profile p {
+  font-size: 1.8rem;
+  color: var(--fs2);
+}
+
+.profile .container button {
+  width: 28rem;
+  height: 5.6rem;
+  border-radius: 1.6rem;
+  background-color: var(--light);
+  color: var(--hover);
+  font-size: 1.8rem;
+}
+
+.profile .container button:hover {
+  color: var(--fs1);
+  transition: 0.2s ease-in-out;
+  background-color: var(--hover);
+  cursor: pointer;
+}
+
+.perfil .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil .container .card-perfil {
+  width: 59.2rem;
+  height: 85.4rem;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.5rem;
+  padding: 2.4rem;
+  border-radius: 2rem;
+}
+
+.perfil .container .card-perfil .saudacao h2 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: var(--fs2);
+  padding-bottom: 3.4rem;
+}
+
+.perfil .container .card-perfil .saudacao p {
+  width: 54.4rem;
+  height: 4rem;
+  background-color: var(--bg);
+  color: var(--fs2);
+  display: flex;
+  align-items: center;
+  font-size: clamp(0.8rem, 3.2vw, 1.6rem);
+  padding-left: 1.2rem;
+  border-radius: 1rem;
+}
+
+.perfil .container .card-perfil .wrapper-status {
+  display: flex;
+  gap: 3.4rem;
+}
+
+.perfil .container .card-perfil .wrapper-status .status {
+  font-size: 1.6rem;
+  color: var(--fs2);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.perfil .container .card-perfil .wrapper-status .status .icons-status {
+  color: var(--icon01);
+}
+.perfil .container .card-perfil .wrapper-status .status .icons-status span {
+  color: var(--fs1);
+  padding-left: 0.3rem;
+}
+
+.perfil .container .card-perfil .wrapper-status .status .icons-status.azul {
+  color: var(--icon02);
+}
+
+.perfil .container .card-perfil .wrapper-status .status .icons-status.rosa {
+  color: var(--hover);
+}
+
+.perfil .container .card-perfil .info-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.perfil .container .card-perfil .info-perfil li {
+  font-size: 1.6rem;
+  color: var(--fs1);
+}
+
+.perfil .container .card-perfil .info-perfil li span {
+  color: var(--fs2);
+}
+
+.border-destaque-perfil {
+  border: 0.1rem solid var(--hover);
+  border-radius: 3.8rem;
+  padding: 0.5rem 1.6rem;
+  gap: 1rem;
+}
+
+.friends-comunity .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.friends-comunity .container .card-friends-comunity {
+  width: 28rem;
+  height: 41.1rem;
+  border-radius: 1.6rem;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+}
+
+.friends-comunity .container .card-friends-comunity h5 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--fs2);
+  padding-bottom: 2.4rem;
+}
+
+.friends-comunity .container .card-friends-comunity h5 span {
+  color: var(--fs2);
+}
+
+.friends-comunity .container .card-friends-comunity h5 span:hover {
+  color: var(--hover);
+  cursor: pointer;
+}
+.friends-comunity
+  .container
+  .card-friends-comunity
+  .profile-friends-comunity
+  ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.friends-comunity
+  .container
+  .card-friends-comunity
+  .profile-friends-comunity
+  ul
+  li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}z
+
+.friends-comunity
+  .container
+  .card-friends-comunity
+  .profile-friends-comunity
+  ul
+  li
+  img {
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.friends-comunity
+  .container
+  .card-friends-comunity
+  .profile-friends-comunity
+  ul
+  li
+  p {
+  font-size: 1.4rem;
+  color: var(--fs2);
+}
+
+footer {
+  font-size: clamp(0.8rem, 3.2vw, 1.6rem);
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+footer a:hover {
+  color: var(--hover);
+  cursor: pointer;
+}
